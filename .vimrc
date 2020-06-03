@@ -2,7 +2,7 @@ set noexpandtab " Make sure that every file uses real tabs, not spaces
 set shiftround  " Round indent to multiple of 'shiftwidth'
 set smartindent " Do smart indenting when starting a new line
 set autoindent  " Copy indent from current line, over to the new line
-"set nu		" Show line number
+set nu		" Show line number
 " Set the tab width
 let s:tabwidth=4
 exec 'set tabstop='    .s:tabwidth
@@ -53,6 +53,10 @@ set shortmess+=c
 
 " always show signcolumns
 set signcolumn=yes
+
+" clear signcolumn color
+highlight clear SignColumn
+
 
 " Use tab for trigger completion with characters ahead and navigate.
 inoremap <silent><expr> <TAB>
