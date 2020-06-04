@@ -226,3 +226,6 @@ let g:vimtex_compiler_latexmk = {
 			\ ],
 			\}
 let g:vimtex_compiler_method = 'latexmk'
+
+"Disable Vimwiki to consider every markdown file as wiki
+let g:vimwiki_global_ext = 0
